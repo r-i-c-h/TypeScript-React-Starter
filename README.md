@@ -69,13 +69,19 @@ This tightens the iteration loop by allowing us to quickly preview changes.
 
 # Testing the project
 
-Testing is also just a command away:
+Testing is also just a command away. For testing, we'll be using Jest, an incredibly useful testing utility. In order to allow Jest to run at its best, before our very first test run we'll transform our project folder into a 'git repository' by typing 
+
+```sh
+git init
+```
+
+Now that we've done that, our project will be setup for testing with Jest. To go ahead and test our files, type 
 
 ```sh
 npm run test
 ```
 
-This command runs Jest, an incredibly useful testing utility, against all files whose extensions end in `.test.ts` or `.spec.ts`.
+This command runs Jest against all files whose extensions end in `.test.ts` or `.spec.ts`.
 Like with the `npm run start` command, Jest will automatically run as soon as it detects changes.
 If you'd like, you can run `npm run start` and `npm run test` side by side so that you can preview changes and test them simultaneously.
 
